@@ -18,6 +18,10 @@ import { HeroeComponent } from './components/heroe/heroe.component';
 
 //Servicios
 import {Heroe, HeroesService} from './servicios/heroes.service';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 
 
 
@@ -28,10 +32,14 @@ import {Heroe, HeroesService} from './servicios/heroes.service';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
-    HeroeComponent
+    HeroeComponent,
+    BuscadorComponent,
+    HeroeTarjetaComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
     app_routing
   ],
   providers: [HeroesService],
